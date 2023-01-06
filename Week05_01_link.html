@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumett Ampornsak" />
+    <meta name="description" content="เรียนรู้คำสั่ง HTML เบื้องต้น" />
+    <meta name="keywords" content="html css bootstrap javascript" />
+    <title>SNYTAX G</title>
+    <style>
+      img {
+        width: 30px;
+      } /*
+        a:link{
+            color: rgb(248, 165, 69);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(248, 69, 218);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(69, 248, 78);
+            background-color: blanchedalmond;
+            text-decoration: none;
+        }*/
+
+      a:link,
+      a:visited {
+        background-color: rgb(255, 0, 238);
+        color: white;
+        padding: 15px, 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+      }
+      a:hover,
+      a:active {
+        background-color: rgb(255, 0, 0);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to SNYTAX Homepage</h1>
+    <hr />
+    <h3 style="text-align: right">
+      <a href="Home.html"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZX7KqB7rlhG881h_FH_DC6KZfXJApBPnRVg&usqp=CAU"
+          alt="Back arrow"
+      /></a>
+    </h3>
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.npru.ac.th">NPRU</a></p>
+    <hr />
+    <h2>Target Attribute</h2>
+    <p><a href="https://www.npru.ac.th" target="_blank">NPRU - Blank</a></p>
+    <p><a href="https://www.npru.ac.th" target="_self">NPRU - Self</a></p>
+    <p><a href="https://www.npru.ac.th" target="_parent">NPRU - Parent</a></p>
+    <p><a href="https://www.npru.ac.th" target="_top">NPRU - Top</a></p>
+    <hr />
+    <h2>Relative URLs</h2>
+    <p><a href="Home.html">Home</a></p>
+    <hr />
+    <h2>Link To Mail</h2>
+    <p><a href="mailto:644230035@webamail.npru.ac.th">Mail To Me</a></p>
+    <hr />
+    <h2>Button as a Link</h2>
+    <button onclick="document.location = 'Home.html'">back to home</button>
+    <button type="submit">ยืนยัน</button>
+    <button type="reset">รีเซ็ท</button>
+    <button disabled="disabled">ปิด</button>
+    <hr />
+    <p style="text-align: center">
+      <a href="">Jump to Top</a>
+    </p>
+  </body>
+</html>
