@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumett Ampornsak" />
+    <meta name="description" content="เรียนรู้คำสั่ง HTML เบื้องต้น" />
+    <meta name="keywords" content="html css bootstrap javascript" />
+    <title>List_Homework-Sumett</title>
+
+    <style>
+      textarea {
+        background-color: blanchedalmond;
+        color: rgb(16, 16, 16);
+        border: 4px brown solid;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center; background-color: rgb(170, 255, 0)">
+      SUMETT RESTERANT
+    </h1>
+    <!--ส่วนที่ 1-->
+    <b style="background-color: orange; font-size: 30px">ร้านอาหารอีสาน </b>
+    <p>เมนูอาหาร</p>
+
+    <ul type="square">
+      <li><u style="color: red">ส้มตำ </u></li>
+      <ol type="1">
+        <li>ส้มตำปูปลาร้า</li>
+        <li>ตำไทย</li>
+        <li>ส้มตำทะเล</li>
+      </ol>
+      <li><u style="color: red">ไก่ย่าง</u></li>
+      <ol type="a">
+        <li>วิเชียร</li>
+        <li>โคราช</li>
+        <li>สามพี่น้อง</li>
+      </ol>
+      <li>ปลาเผา</li>
+    </ul>
+    <hr />
+    <!--ส่วนที่ 2-->
+    <b style="background-color: rgb(0, 255, 85); font-size: 30px"
+      >ร้านอาหารใต้
+    </b>
+    <p>เมนูอาหาร</p>
+    <ol type="1">
+      <li>ข้าวยำปักษ์ใต้</li>
+      <ul type="Disc">
+        <li>เผ็ดน้อย</li>
+        <li>เผ็ดปานกลอง</li>
+        <li>เผ็ดมาก</li>
+      </ul>
+      <li>สตอผัดกุ้ง</li>
+      <li>แกงไตปลา</li>
+    </ol>
+    <hr />
+    <!--Code Example-->
+    <h3 style="background-color: aqua">Code Example</h3>
+    <textarea name="Code Example" id="Code01" cols="180" rows="13">
+        <body>
+            <h1 style="text-align: center; background-color: rgb(170, 255, 0)">
+                SUMETT RESTERANT
+            </h1>
+        <!--ส่วนที่ 1-->
+            <b style="background-color: orange; font-size: 30px">ร้านอาหารอีสาน </b>
+            <p>เมนูอาหาร</p>
+        
+            <ul type="square">
+                <li><u style="color: red">ส้มตำ </u></li>
+                <ol type="1">
+                    <li>ส้มตำปูปลาร้า</li>
+                    <li>ตำไทย</li>
+                    <li>ส้มตำทะเล</li>
+                </ol>
+                <li><u style="color: red">ไก่ย่าง</u></li>
+                <ol type="a">
+                    <li>วิเชียร</li>
+                    <li>โคราช</li>
+                    <li>สามพี่น้อง</li>
+                </ol>
+                <li>ปลาเผา</li>
+            </ul>
+            <hr />
+        <!--ส่วนที่ 2-->
+            <b style="background-color: rgb(0, 255, 85); font-size: 30px">ร้านอาหารใต้
+            </b>
+            <p>เมนูอาหาร</p>
+            <ol type="1">
+                <li>ข้าวยำปักษ์ใต้</li>
+                <ul type="Disc">
+                    <li>เผ็ดน้อย</li>
+                    <li>เผ็ดปานกลอง</li>
+                    <li>เผ็ดมาก</li>
+                </ul>
+                <li>สตอผัดกุ้ง</li>
+                <li>แกงไตปลา</li>
+            </ol>
+            <hr>
+    </textarea>
+    <!--Code Example-->
+
+    <!-- ปุ่มคัดลอกข้อความ -->
+    <br>
+    <button onclick="myFunction()">Copy Code</button>
+    <script>
+      function myFunction() {
+        // คัดลอกข้อความ 
+        var copyText = document.getElementById("Code01");
+
+        // เลือกข้อความในฟิลด์
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); 
+
+        // คัดลอกข้อความในฟิลด์
+        navigator.clipboard.writeText(copyText.value);
+
+        // แจ้งเตือนว่าคัดลอกข้อความเรียบร้อย
+        alert("คัดลอกข้อความเรียบร้อย!!");
+      }
+    </script>
+
+    <h4 align="right"><a href="Home.html">Back to home</a></h4>
+  </body>
+</html>
