@@ -1,105 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Sumett Ampornsak" />
-    <meta name="description" content="เรียนรู้คำสั่ง HTML เบื้องต้น" />
-    <meta name="keywords" content="html css bootstrap javascript" />
-    <title>Table-Sumett</title>
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 30%;
-        
-      }
-      th,td{
-        padding: 5px;
-        border-bottom: 1px solid rgb(238, 238, 238);
-      }
-      tr:hover {
-        background-color: #aeeeee;
-      }
 
-      h2 {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Welcome To Sumett Homepage</h1>
-    <hr />
-    <h4 align="right"><a href="Home.html">Back To Home</a></h4>
-    <!--สร้าง Table -->
-    <h2> รายการสินค้า</h2>
-    <table border="0"  bordercolor="gray" align="center">
-      <thead bgcolor="pink"
-        <tr style="text-align: center;" style="">
-          <th><i> รหัสสินค้า</th>
-          <th><i> ภาพสินค้า</th>
-          <th><i> ชื่อสินค้า</th>
-          <th><i> ราคา</th>
-          <th><i> ดำเนินการ</th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="text-align: center;">
-          <td>P001</td>
-          <td><img
-            src="images/Sushi01.jpg"
-            alt="Sushi01"
-            width="50px"
-            height="50px"
-          /></td>
-          <td>Sushi 1</td>
-          <td>350</td>
-          <td bgcolor="Lightblue"><ins style="color: blue"> Delete</ins></td>
-        </tr>
-        <tr style="text-align: center;">
-          <td>P002</td>
-          <td><img
-            src="images/Sushi02.jpg"
-            alt="Sushi02"
-            width="50px"
-            height="50px"
-          /></td>
-          <td>Sushi 2</td>
-          <td>350</td>
-          <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
-        </tr>
-        <tr style="text-align: center;">
-          <td>P003</td>
-          <td><img
-            src="images/Sushi03.jpg"
-            alt="Sushi03"
-            width="50px"
-            height="50px"
-          /></td>
-          <td>Sushi 3</td>
-          <td>350</td>
-          <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
-        </tr>
-        <tr style="text-align: center;">
-          <td>P004</td>
-          <td><img
-            src="images/Sushi04.jpg"
-            alt="Sushi04"
-            width="50px"
-            height="50px"
-          /></td>
-          <td>Sushi 4</td>
-          <td>120</td>
-          <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
-        </tr>
-        <tr>
-        
-          <td colspan="5" align="right" bgcolor="Lightgreen"><b>ราคารวม : 500 บาท</b> <button type="submit">Order Now</button></td>
-          
-        </tr>
-      </tbody>
-    </table>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Sumett Ampornsak" />
+  <meta name="description" content="เรียนรู้คำสั่ง HTML เบื้องต้น" />
+  <meta name="keywords" content="html css bootstrap javascript" />
+  <title>Table-Sumett</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 30%;
 
-  </body>
+    }
+    th,
+    td {
+      padding: 5px;
+      border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    tr:hover {
+      background-color: #d5f4f4;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome To Sumett Homepage</h1>
+  <hr />
+  <h4 align="right"><a href="Home.html">Back To Home</a></h4>
+  <!--สร้าง Table -->
+  <h2> รายการสินค้า</h2>
+  <table border="0" bordercolor="gray" align="center">
+    <thead bgcolor="pink" <tr style="text-align: center;" style="">
+      <th><i> รหัสสินค้า</th>
+      <th><i> ภาพสินค้า</th>
+      <th><i> ชื่อสินค้า</th>
+      <th><i> ราคา</th>
+      <th><i> ดำเนินการ</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr style="text-align: center;">
+        <td>P001</td>
+        <td><img src="images/Sushi01.jpg" alt="Sushi01" width="50px" height="50px" /></td>
+        <td>Sushi 1</td>
+        <td>350</td>
+        <td bgcolor="Lightblue"><ins style="color: blue"> Delete</ins></td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>P002</td>
+        <td><img src="images/Sushi02.jpg" alt="Sushi02" width="50px" height="50px" /></td>
+        <td>Sushi 2</td>
+        <td>350</td>
+        <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>P003</td>
+        <td><img src="images/Sushi03.jpg" alt="Sushi03" width="50px" height="50px" /></td>
+        <td>Sushi 3</td>
+        <td>350</td>
+        <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>P004</td>
+        <td><img src="images/Sushi04.jpg" alt="Sushi04" width="50px" height="50px" /></td>
+        <td>Sushi 4</td>
+        <td>120</td>
+        <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
+      </tr>
+      <tr>
+
+        <td colspan="5" align="right" bgcolor="Lightgreen"><b>ราคารวม : 500 บาท</b> <button type="submit">Order
+            Now</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</body>
 </html>
