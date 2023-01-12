@@ -13,6 +13,7 @@
     <h1>Welcome To Sumett Homepage</h1>
     <hr />
     <h4 align="right"><a href="Home.html">Back to home</a></h4>
+
     <!--List แบบจุด -->
     <u><h2>Unorder list</h2></u>
     <ul>
@@ -21,14 +22,55 @@
       <li>Milk</li>
     </ul>
     <hr />
-    <!--List แบบจุดโปรง -->
+
+    <!--List แบบจุดโปร่ง -->
     <u><h2>Type Style Of Unorder list</h2></u>
-    <ul type="circle">
+    <ul style="list-style-type:circle;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
     </ul>
+    <hr />
+
+    <!--List แบบจุดสี่เหลี่ยม -->
+    <ul type="square">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <hr />
+
+    <!--List แบบไม่มีจุดหรือเลขอะไรเลย -->
+    <ul type="none">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <hr />
+
+    <!--List แบบปกติพื้นฐาน -->
+    <ul type="Disc">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <hr />
+
+    <h2>Nest Unorder list</h2>
+    <!--List แบบ Unorder-->
+    <ul type="Disc">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <ul>
+        <!--List แบบซ้อน Tag UL -->
+        <li>Green Tea</li>
+        <li>Black Tea</li>
+        <li>Thai Tea</li>
+      </ul>
+      <li>Milk</li>
+    </ul>
     <hr size="5" color="green" />
+
     <!--List แบบตัวเลข -->
     <u><h2>Order list</h2></u>
     <ol>
@@ -37,5 +79,54 @@
       <li>Milk</li>
     </ol>
     <hr />
+<!--List แต่ละแบบทั้งหมด-->
+    <u><h2>Type Style Of Order list</h2></u>
+    <ol type="1">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr>
+<!--List แบบภาษาอังกฎษตัวใหญ่ -->
+    <ol type="A">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr>
+<!--List แบบภาษาอังกฎษตัวเล็ก -->
+    <ol type="a">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr>
+<!--List แบบภาษาโรมันตัวใหญ่ -->
+    <ol type="I">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr>
+<!--List แบบภาษาโรมันตัวเล็ก-->
+    <ol type="i">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr>
+
+    <h2>Nest Order-Unorder list</h2>
+    <!--List แบบผสม Order-Unorder-->
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <ol style="list-style-type:circle;">
+        <li>Green Tea</li>
+        <li>Black Tea</li>
+        <li>Thai Tea</li>
+      </ol>
+      <li>Milk</li>
+    </ol>
   </body>
 </html>
