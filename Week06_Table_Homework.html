@@ -9,43 +9,75 @@
     <meta name="keywords" content="html css bootstrap javascript" />
     <title>Table-Sumett</title>
     <style>
-        table,th,td{
-        border: 1px solid red;
-        padding: 10px;
-        border-radius: 5px;
+      table {
+        border-collapse: collapse;
+        width: 100%;
       }
-      th,td,{
-        width:100px;
+      th,td{
+        padding: 5px;
+        border-bottom: 1px solid rgb(238, 238, 238);
+      }
+      tr:hover {
+        background-color: #aeeeee;
+      }
+
+      h2 {
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <h1>Welcome To Sumett Homepage</h1>
     <hr />
-    <h4 align="right"><a href="Home.html">Back to home</a></h4>
+    <h4 align="right"><a href="Home.html">Back To Home</a></h4>
     <!--สร้าง Table -->
-    <h2>Normal Table</h2>
-    <table border="10">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Phone</th>
+    <h2>รายการสินค้า</h2>
+    <table border="0"  bordercolor="gray">
+      <thead bgcolor="pink"
+        <tr style="text-align: center;">
+          <th>รหัสสินค้า</th>
+          <th>ภาพสินค้า</th>
+          <th>ชื่อสินค้า</th>
+          <th>ราคา</th>
+          <th>ดำเนินการ</th>
+          
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>644230035</td>
+        <tr style="text-align: center;">
+          <td>P001</td>
           <td>Sumett</td>
-          <td>0957940917</td>
+          <td>Sushi 1</td>
+          <td>350</td>
+          <td><ins style="color: blue"> Delete </ins></td>
+        </tr>
+        <tr style="text-align: center;">
+          <td>P002</td>
+          <td>Sumett</td>
+          <td>Sushi 2</td>
+          <td>350</td>
+          <td><ins style="color: blue"> Delete </ins></td>
+        </tr>
+        <tr style="text-align: center;">
+          <td>P003</td>
+          <td>Sumett</td>
+          <td>Sushi 3</td>
+          <td>350</td>
+          <td><ins style="color: blue"> Delete </ins></td>
+        </tr>
+        <tr style="text-align: center;">
+          <td>P004</td>
+          <td>Sumett</td>
+          <td>Sushi 4</td>
+          <td>120</td>
+          <td><ins style="color: blue"> Delete </ins></td>
         </tr>
         <tr>
-          <td>644230035</td>
-          <td>Sumett</td>
-          <td>0957940917</td>
+        
+          <td colspan="5" align="right" bgcolor="yellow"><b>ราคารวม : 500 บาท</b></td>
         </tr>
       </tbody>
     </table>
-    <hr />
+
   </body>
 </html>
