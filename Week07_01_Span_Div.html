@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumett Ampornsak" />
+    <meta name="description" content="เรียนรู้คำสั่ง HTML เบื้องต้น" />
+    <meta name="keywords" content="html css bootstrap javascript" />
+    <title>Span_Div-Sumett</title>
+        <!--Classใช้./IDใช้#-->
+    <style>
+        #mydiv{
+            border-color: rgb(165, 42, 42, 0.475);
+            border-style: solid;
+            border-width: 3px;
+            background: yellow;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .content{
+            width: 30%;
+            float: left;
+            padding: 5px;
+            margin-right: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome To Sumett Homepage</h1>
+    <hr />
+    <h4 align="right"><a href="Home.html">Back To Home</a></h4>
+    <h2>Span Tag</h2>
+    <!--Spanปรับข้อมูลได้ตามต้องการโดยไม่รบกวนส่วนอื่นและไม่ขึ้นบรรทัดใหม่ เรียกว่า INLINE-->
+    <p>
+      Lorem, ipsum
+      <span style="color: red">dolor</span>
+      sit amet consectetur
+      adipisicing elit. Deleniti velit atque delectus qui et quo impedit
+      <span style="color: rgb(55, 10, 255)">reiciendis nisi, expli.</span>
+    </p>
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+    <span style="background-color: pink;">span4</span>
+    <hr>
+    <h2>Div Tag</h2> <!-- Div ปรับข้อมูลแต่ละแถวนั้นและขึ้นบรรทัดใหม่ เรียกว่า Blog-->
+    <div style="background-color: pink;">Div 1</div>
+    <div>Div 2</div>
+    <div id="mydiv">Div 3</div>
+    <div>Div 4</div>
+    <hr>
+    <h2>Div With CSS</h2>
+    <div id="mydiv"> <!--Classใช้./IDใช้#-->
+        <h3 style="color: rgb(235, 5, 5);">Sumett</h3>
+        <p>IT.Nakhon Pathom Rajabhat University</p>
+    </div>
+    <hr>
+    <h2>Layout With Table</h2> <!--จัด Layout ใช้ Table-->
+    <hr>
+    <table border="1" align="center" width="400px">
+        <tr>
+            <td bgcolor="pink" width="200px">Column 1</td>
+            <td bgcolor="lightblue">Column 2</td>
+            <td bgcolor="lightyellow">Column 3</td>
+        </tr>
+    </table>
+    <h2>Layout With Div</h2> <!--จัด Layout ใช้ Div-->
+    <div style="background-color:aqua; overflow: hidden;">
+       
+        <div class="content"style="background-color:rgb(255, 174, 0)">Content 1</div>
+        <div class="content"style="background-color:rgb(98, 255, 0)">Content 2</div>
+        <div class="content"style="background-color:rgb(255, 0, 251)">Content 3</div>
+    </div>
+  </body>
+</html>
