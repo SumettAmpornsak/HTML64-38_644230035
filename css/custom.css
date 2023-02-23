@@ -3,37 +3,41 @@ main {
     width: 1000px;
     margin-left: auto;
     margin-right:auto;
+    border-radius: 10px;
 }
 header {
-    background-color: rgb(0, 27, 72);
+    //background-color: rgb(0, 27, 72);
     color: #ffffff;
     overflow: hidden;
   }
-.logo{
-    background-color: rgb(37, 69, 122);
+.logo img{
+    float: left;
     padding: 0px;
-    width: 50px;
+    width: 30px;
     
 }
 .menu{
-    background-color: rgb(1, 138, 190);
+    //background-color: rgb(1, 138, 190);
     float: right;
 
 }
 .content{
-    background-color: rgb(151, 202, 216);
+    //background-color: rgb(151, 202, 216);
     overflow: hidden;
     margin: 0px 20px;
+
 }
 .banner{
-    background-color: blueviolet;
+    //background-color: blueviolet;
 }
 .subcontent{
-    background-color: tomato;
+    background-image: linear-gradient(to right top, #6096b4, #699eb9, #73a6be, #7cadc3, #86b5c8, #8dbdc9, #97c5ca, #a2cccb, #b4d4c9, #c9dbca, #dde2d0, #eee9da);
+    border-radius: 10px;
     width: 300px;
     height: 200px;
     float: left;
     margin: 10px;
+    box-shadow: rgb(255, 255, 255) 3px 4px 10px 1px;
 }
 ul{
     margin: 0px;
@@ -46,4 +50,24 @@ li{
 }
 footer{
     background-color: rgb(214, 235, 238);
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    padding: 1px;
+
 }
+.imglogo{
+    border-radius: 60%;
+    margin: 5px;
+}
+.logoName{
+    float: left;
+    margin-top: 10px;
+}
+body{
+    background-image: linear-gradient(to right, #25457a, #346694, #4e87ac, #70a8c2, #97cad8);
+
+}
+div:hover {
+    background-color: yellow;
+  }
+  
