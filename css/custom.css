@@ -31,13 +31,16 @@ header {
     //background-color: blueviolet;
 }
 .subcontent{
-    background-image: linear-gradient(to right top, #6096b4, #699eb9, #73a6be, #7cadc3, #86b5c8, #8dbdc9, #97c5ca, #a2cccb, #b4d4c9, #c9dbca, #dde2d0, #eee9da);
+    background-image: linear-gradient(to top, #4e87ac, #70a8c2, #97c5ca, #a2cccb);
     border-radius: 10px;
     width: 300px;
-    height: 200px;
+    height: 300px;
     float: left;
     margin: 10px;
     box-shadow: rgb(255, 255, 255) 3px 4px 10px 1px;
+    text-align: center;
+    
+    
 }
 ul{
     margin: 0px;
@@ -65,7 +68,22 @@ footer{
 }
 body{
     background-image: linear-gradient(to right, #25457a, #346694, #4e87ac, #70a8c2, #97cad8);
-
 }
+.a{
+    margin-top: -20px;
+    margin-left: 10px;
+    text-align: left;
+}
+.b{
+    margin-top: -20px;
+    margin-left: 10px;
+    text-align: left;
+}
+h2{
+    text-shadow: 2px 2px 5px #25457a;
+    color: #ffffff;
+}
+    
+
 
   
