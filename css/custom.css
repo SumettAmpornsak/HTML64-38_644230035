@@ -5,11 +5,16 @@ main {
 header {
     background-color: #444;
     color: #ffffff;
-    padding: 30px;
+    padding: 40px;
   }
 .logo{
+    background-color: #dacd1b;
+   
+    padding: 10px;
 
 }
 .menu{
+    background-color: #777;
+    padding: 10px;
 
 }
