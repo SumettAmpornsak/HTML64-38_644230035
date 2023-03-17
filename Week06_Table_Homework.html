@@ -51,40 +51,82 @@
     <tbody>
       <tr style="text-align: center;">
         <td>P001</td>
-        <td><img src="images/Sushi01.jpg" alt="Sushi01" width="50px" height="50px" /></td>
+        <td><img src="images/Sushi01.jpg" alt="Sushi01" width="50px" height="50px" onclick="showImage(src)"/></td>
         <td>Sushi 1</td>
         <td>350</td>
-        <td bgcolor="Lightblue"><ins style="color: blue"> Delete</ins></td>
+        <td bgcolor="Lightblue"><ins style="color: blue" onclick="del()"> Delete</ins></td>
       </tr>
       <tr style="text-align: center;">
         <td>P002</td>
-        <td><img src="images/Sushi02.jpg" alt="Sushi02" width="50px" height="50px" /></td>
+        <td><img src="images/Sushi02.jpg" alt="Sushi02" width="50px" height="50px" onclick="showImage(src)"/></td>
         <td>Sushi 2</td>
         <td>350</td>
-        <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
+        <td bgcolor="Lightblue"><ins style="color: blue" onclick="del()"> Delete </ins></td>
       </tr>
       <tr style="text-align: center;">
         <td>P003</td>
-        <td><img src="images/Sushi03.jpg" alt="Sushi03" width="50px" height="50px" /></td>
+        <td><img src="images/Sushi03.jpg" alt="Sushi03" width="50px" height="50px" onclick="showImage(src)"/></td>
         <td>Sushi 3</td>
         <td>350</td>
-        <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
+        <td bgcolor="Lightblue"><ins style="color: blue" onclick="del()"> Delete </ins></td>
       </tr>
       <tr style="text-align: center;">
         <td>P004</td>
-        <td><img src="images/Sushi04.jpg" alt="Sushi04" width="50px" height="50px" /></td>
+        <td><img src="images/Sushi04.jpg" alt="Sushi04" width="50px" height="50px" onclick="showImage(src)"/></td>
         <td>Sushi 4</td>
         <td>120</td>
-        <td bgcolor="Lightblue"><ins style="color: blue"> Delete </ins></td>
+        <td bgcolor="Lightblue"><ins style="color: blue" onclick="del()"> Delete </ins></td>
       </tr>
       <tr>
 
-        <td colspan="5" align="right" bgcolor="Lightgreen"><b>ราคารวม : 500 บาท</b> <button type="submit">Order <br>
+        <td colspan="5" align="right" bgcolor="Lightgreen"><b>ราคารวม : 500 บาท</b> <button onclick="order()"type="submit">Order <br>
             Now</button></td>
 
       </tr>
     </tbody>
   </table>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+function showImage(src) {
+  Swal.fire({
+    title: 'ภาพตัวอย่าง',
+    text: 'ดูเฉยๆของจริงไม่ใช่แบบนี้นะ.',
+    imageUrl: src,
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+}
+  function order () {
+    Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Your Order has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+}
+  function del() {
+    Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Deleted!',
+      'Your file has been deleted.',
+      'success'
+    )
+  }
+})
+  }
 
+
+  </script>
 </body>
 </html>

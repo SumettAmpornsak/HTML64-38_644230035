@@ -1,55 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title>
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sumett-PAI</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap5-Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="css/custom_bs.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sumett_PAI 5</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bstarget="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >หน้าหลัก</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">การศึกษา</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ทักษะ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">วิชาเรียน</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >ภาพกิจกรรม</a>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="contact.html">ติดต่อ</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">จิตอาสา</a></li>
+                <li><a class="dropdown-item" href="#">กีฬาสี</a></li>
+                <li>
+                  <hr class="dropdown-divider" />ปีใหม่
+            </li>
+          </ul>
         </div>
-      </nav>
-<h1>Hello-Bootstrap</h1>
+      </div>
+    </nav>
+    <!-- ภาพสไลด์ carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="100">
+          <img src="/images/sl1.jpg" class="d-block w-100" alt="First slide" />
+        </div>
+        <div class="carousel-item" data-bs-interval="100">
+          <img src="/images/sl2.jpg" class="d-block w-100" alt="Second slide" />
+        </div>
+        <div class="carousel-item" data-bs-interval="100">
+          <img src="/images/sl3.png" class="d-block w-100" alt="Third slide" />
+        </div>
+        <div class="carousel-item" data-bs-interval="100">
+          <img src="/images/sl4.png" class="d-block w-100" alt="Fourth slide" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- แบ่งคอลัมน์เป็น 4 คอลัมน์ -->
+
+  <div class="container-fluid mybggrey text-center text-white">
+    <div class="row">
+      <div class="col-sm-3 mt-3 mb-3">
+        <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+          <i class="fas fa-home-heart"></i><br>HOME</div>
+      </div>
+      <div class="col-sm-3 mt-3 mb-3">
+        <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+          <i class="fab fa-facebook"></i><br>Facebook</div>
+      </div>
+      <div class="col-sm-3 mt-3 mb-3">
+        <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+          <i class="fab fa-instagram"></i><br>Instagram</div>
+      </div>
+      <div class="col-sm-3 mt-3 mb-3">
+        <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+          <i class="fab fa-github"></i><br>Git Hub</div>
+      </div>
+      
+    </div>
+  </div>
 
 
+   <!-- ส่วนที่ 2 -->
+   <div class="container mt-4 h4">
+    เกี่ยวกับฉัน
+<hr class="my-hr">
+  </div>
+  <!-- ส่วนข้อมูล 1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div>
+          <img src="images/npru_1.jpg" alt="NPRU" class="img-fluid">
+          <p style="text-align: justify;">พ.ศ. 2529
+            รับนักศึกษาสาขาวิชาการอื่นเพิ่มขึ้น และเปิดถึงระดับปริญญาตรีเป็นปีแรกและเปิดโครงการการศึกษาสำหรับบุคลากรประจำการ (กศ.บป.) ระดับปริญญาตรี และอนุปริญญาเป็นปีแรก เปิดดำเนินการโรงเรียนสาธิตโดยรับนักเรียนชั้นมัธยมปีที่ 1 จำนวน 2 ห้องเรียน ในแผนการเรียนอังกฤษ – คณิตศาสตร์ โดยใช้อาคารนอน ดี. 3 ดัดแปลงเป็นอาคารเรียน ในขณะเดียวกัน ได้ดำเนินงานควบคู่ไปกับโรงเรียนสาธิตอนุบาล ซึ่งเปิดสอนมาตั้งแต่ปี 2522 โดยใช้อาคารเรียนชั่วคราว มีตั้งแต่ชั้นเด็กเล็ก อนุบาล 1 อนุบาล 2
+            </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          <img src="images/sport_01.jpg" alt="sport" class="img-fluid">
+          <p style="text-align: justify;">พ.ศ. 2529
+            แน่นอนว่าจากสถานการณ์ล่าสุด เอริค เทน ฮาก กุนซือทีม ผีแดง ยืนยันว่าสตาร์ทีมชาติ โปรตุเกส จะยังได้ทำหน้าที่กัปตันทีมต่อไป แต่ในระยะยาวเชื่อว่าผู้จัดการทีมชาวดัตช์น่าจะต้องตัดสินใจอย่างชัดเจนและเป็นทางการว่าใครกันที่จะเป็นกัปตันทีมของถิ่น โอลด์ แทรฟฟอร์ด หลังจาก แฮร์รี่ แม็กไกวร์ กัปตันตัวจริงหลุดไปเป็นตัวสำรองอย่างถาวรโดยมี แฟร์นันด์ส ได้รับภาระแทนเป็นการชั่วคราว
+            เอาเป็นว่าเมื่อพิจารณาถีงขุมกำลังของ แมนฯ ยูไนเต็ด แล้วน่าจะมี 8 พ่อค้าแข้งที่อยู่ในข่ายพร้อมรับบทบาทสำคัญดังกล่าวได้ แต่ใครกันที่เหมาะสมที่จะได้ทำหน้าที่มากที่สุด
+            </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          <img src="images/Dontoom_1.jpg" alt="Dontoom" class="img-fluid">
+          <p style="text-align: justify;">พ.ศ. 2529
+            โรงเรียนมัธยมวัดดอนตูมเปิดทำการสอนในระดับประถมศึกษาเป็นครั้งแรกปีพ.ศ.๒๔๖๕ โดยอาศัยศาลาการเปรียญของวัดดอนตูมเป็นสถานที่เรียนอยู่ในความอุปการะของพระครูปัญญาธิการ (เต่า โพธิสาโร)  ท่านเจ้าอาวาสวัดดอนตูม มีครูละออ  จารุศิริ  เป็นครูใหญ่  ต่อมาได้สร้างอาคารเรียนไม้ใต้ถุนสูง ๑ หลัง ทางราชการให้ชื่อว่า “ โรงเรียนประชาบาลปากแรต ๑“ (พุทธสรณ์สามัคคี)
+            ปัจจุบันโรงเรียนเปิดทำการสอนตั้งแต่ระดับชั้นมัธยมศึกษาตอนต้น ถึงระดับชั้นมัธยมศึกษาตอนปลายมีนักเรียนจำนวน  ๖๕๙คน  ครูและบุคลากรทางการศึกษา ๔๘ คน ลูกจ้างประจำ ๖ คนภายใต้การบริหารงานของ นายนิวัตร  วงศ์วิลัย  ผู้อำนวยการโรงเรียนมัธยมวัดดอนตูมคนปัจจุบัน
+            </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          <img src="images/IT-skills_01.jpg" alt="IT-skills" class="img-fluid">
+          <p style="text-align: justify;">Skill ที่คน IT ควรมี
+            1. Technical Skill (ทักษะทางด้านเทคนิค) เกี่ยวกับวิชาชีพล้วนๆ ดังนี้
+            2. Soft Skill (ทักษะด้านบุคลิคภาพ)
+            3. ทักษะด้านอื่นๆ
+            “การเป็นคนที่สมบูรณ์นั้น ต้องไม่อยู่นิ่ง มีการพัฒนาตนเองอยู่ตลอดเวลา”
+            </p>
+            <p class="mt-3">
+            <kbd class="bg-primary">java</kbd>
+            <kbd>HTML</kbd>
+            <kbd>CSS</kbd>
+            <kbd>Bootstrap</kbd>
+            <kbd class="bg-primary">kbd</kbd>
+            <kbd>Node-Red</kbd>
+            <kbd>Node.js</kbd>
+            <kbd>Os</kbd>
+            <kbd class="bg-primary">Python</kbd>
+            <kbd>Adobe XD</kbd>
+            <kbd>Kodular</kbd>
+            <kbd>Adobe Premiere pro</kbd>
+            <kbd class="bg-primary">SQL</kbd>
+            <kbd>Adobe Photosshop</kbd>
+            <kbd>Animaker</kbd>
+            <kbd>Microsoft visual studio code</kbd>
+            <kbd>Chat GPT</kbd>
+            <kbd>Figma</kbd>
+            <kbd class="bg-primary">Fl Studio</kbd>
+            <kbd class="bg-primary">Anydesk</kbd>
+            <kbd>Discord</kbd>
+          </p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid bg-secondary text-center text-white">
+        <p>
+          <i class="fas fa-copyright"></i>
+          Copyright By Sumett.IT. <br>
+          Nakhon Pathom Rajabhat University
+        </p>
+      </div>
+      </footer>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-<!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
-</body>
+    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  </body>
 </html>
